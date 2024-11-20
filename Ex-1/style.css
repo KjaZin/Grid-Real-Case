@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #d2cfcf;
+    width: 60vw;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 1.5em;
+    background-color: white;
+}
+.header {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 1em;
+    align-items: center;
+    margin-top: 5px;
+}
+.header img {
+    grid-row: 1/3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.header-text {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.date {
+    color: gray;
+    font-size: 1rem;
+}
+.header-left {
+    text-align: right;
+    display: flex;
+    gap: 3px;
+    margin-right: 20px;
+}
+.header-left span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(93, 87, 87);
+}
+
+.post-content {
+    display: grid;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.video-thumbnail {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 80%;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-details strong {
+    font-size: 1em;
+    align-items: start;
+    margin-left: 0.4em;
+}
+
+.video-meta {
+    color: #888;
+    font-size: 0.5em;
+    margin-left: 15px;
+}
+.post-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.actions div {
+    cursor: pointer;
+}
+
+.action {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 10px;
+}
+.footer {
+    display: grid;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 50px 1fr;
+    grid-row: 300px;
+    gap: 10px;
+    background-color: #f0f0f0;
+    border: solid;
+    border-color: #f4f4f4;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #777373;
+}
+#Comment-btn {
+    display: flex;
+    align-self: start;
+}
+.footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#comment {
+    border: none;
+    background-color: #f0f0f0;
+}
